@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(nidhi4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar{
+    width: 88%;
+    margin: auto ;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+    margin-left: -4%;
+}
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 9px;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#334a4b; 
+    font-size: 15px;
+    font-weight:600;
+    transition: all .3s ease;
+    
+}
+.navbar ul li a:hover{
+    color: red;
+    
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    
+}
+.left-col{
+    margin: 6%;
+    
+}
+.left-col h1{
+    font-size: 75px;
+    color:red;
+    line-height:110px;
+    float: right;
+    transition: all .3s ease;
+
+}
+.left-col h1:hover{
+    color: black;
+}
+.right-col{
+    float: right;
+    margin-right: 4.9%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.right-col p{
+    font-size: 18px;
+    color: #5f5f5f;
+    font-weight: 500;
+    margin-right: 8px;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .container{
+        height: 122vh;
+        background-image: url(nidhi1.jpg);
+
+    }
+    .logo{
+        width: 90px;
+        margin-left: 3%;
+    }
+    .navbar ul li{
+        margin: 0 2.8px;
+    }
+    .navbar ul li a{
+        font-size:8px;
+        font-weight:700;
+    }
+    .navbar{
+        width: 95%;
+        padding: 7px 0;
+        
+   }
+   .content{
+       width: 100%;
+       position: absolute;
+       top: 5%;
+   }
+   .left-col{
+        margin-right: 1% ;
+        margin-top: 120px;
+   }
+   .left-col h1{
+       font-size: 35px;
+       line-height:55px;
+    }
+    .right-col{
+        margin-right: -20%;
+        margin-top: -70px;
+    }
+    .right-col p{
+        font-size: 9px;
+        font-weight: 700;
+        margin-right: 1px;
+    }
+    #icon{
+        width: 60px;
+        cursor: pointer;
+    }
+}
